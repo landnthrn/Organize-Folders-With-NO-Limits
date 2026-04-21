@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0e499b36-2985-47ec-a84e-e49d7968a191" height="350"/>
+  <img src="https://github.com/user-attachments/assets/4bf72cf2-57a7-4f67-a9b2-1b5b66853376" height="350"/>
+</p>
+
 # Ordir
 
 A handy Windows app for quickly organizing File Explorer folders in any order you please. Say goodbye to the gut-wrenching mess of folder name ordering by A–Z or numbers.
