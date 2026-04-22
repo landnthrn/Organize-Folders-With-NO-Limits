@@ -30,26 +30,23 @@ Ordir uses a fairly unknown method via hidden `desktop.ini` files, infotips, and
 
 ---
 
-# Install
+# Install Options
 
 For full install options info see docs/install-options-guide.md#build
 
-### ➤ Installer 
+### 1. Installer 
 
-Download the installer `.exe` from **Releases** and run it. Installs to `Program Files` 
+- Download the installer `.exe` from **Releases** and run it. Installs to `Program Files` 
 
-Check `Install 'ordir' command to user PATH`, so you can launch from any folder with [quick launch](#quick-launch-from-any-folder).
-
-
-### ➤ Portable version
-
-Download the portable `.zip` from **[Releases](https://github.com/landnthrn/ordir/releases/tag/2.0.0)**. #
-
-Extract anywhere and run `Ordir.exe`
+- Check `Install 'ordir' command to user PATH`, if you want to use [quick launch](#quick-launch-from-any-folder).
 
 
-### ➤ Build from source
+### 2. Portable
+- Download the portable `.zip` from **[Releases](https://github.com/landnthrn/ordir/releases/tag/2.0.0)**.  
+- Extract anywhere and run `Ordir.exe`
 
+
+### 3. Build
 #### Requirements:
 
 • Windows 10+  
@@ -61,7 +58,7 @@ Extract anywhere and run `Ordir.exe`
     dotnet build Ordir.sln -c Release
 
 #### Full instructions:  
-docs/install-options-guide.md#build
+[docs/install-options-guide.md#build](docs/install-options-guide.md#build)
 
 ---
 
