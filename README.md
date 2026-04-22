@@ -11,18 +11,18 @@ Your configuration transfers wherever you move an organized folder, even to othe
 
 ---
 
-## How it works
+## How It Works
 
 Ordir uses a fairly unknown method via hidden `desktop.ini` files, infotips, and sorting by **Comments** in Explorer.   
 Think of it like giving folders metadata and sorting by it.
 
-#### Input Process:
+#### Input process:
 
 1. Load a target folder  
 2. Order folders to your desire
          
 
-#### Apply Process:  
+#### Apply process:  
 
 1. Creates `desktop.ini(s)` in each folder  
 2. Inserts infotip(s) (order number) into desktop.ini(s)  
@@ -54,16 +54,16 @@ For full install options info see **[install-options-guide.md](docs/install-opti
 • .NET 8 SDK  
 • Inno Setup 6 (only if building installer)  
 
-#### Quick build:  
+#### Quick Build:  
 
     dotnet build Ordir.sln -c Release
 
-#### Full instructions:  
+#### Full Instructions:  
 **[install-options-guide.md](docs/install-options-guide.md#build)**
 
 ---
 
-## Quick launch from any folder
+## Quick Launch From Any Folder
 
 #### You can launch Ordir from any folder inside File Explorer:
 - In the folder you want to launch from
@@ -78,7 +78,7 @@ If you used the installer and enabled PATH integration, you can do this automati
 
 ---
 
-## How to see changes
+## How to See Changes
 
 #### In File Explorer of target folder:
 
@@ -95,7 +95,7 @@ Sometimes it takes some play to Explorer to refresh properly.
 
 ---
 
-## How to set custom thumbnails
+## How to Set Custom Thumbnails
 
 Once folders have been applied, you may notice file and gear icons as thumbnails while viewing folders by large icons.
 Luckily this setup gives folders the ability to add custom thumbnails from image files. 
