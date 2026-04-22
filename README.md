@@ -24,10 +24,10 @@ Think of it like giving folders metadata and sorting by it.
 
 #### Apply process:  
 
-1. Creates `desktop.ini(s)` in each folder  
-2. Inserts infotip(s) (order number) into desktop.ini(s)  
+1. Creates `desktop.ini`(s) in each folder  
+2. Inserts infotip(s) *(order number)* into `desktop.ini`(s)  
 3. Makes into system folder(s)  
-4. Hides `desktop.ini(s)`  
+4. Hides `desktop.ini`(s)  
 
 ---
 
@@ -37,7 +37,7 @@ For full install options info see **[install-options-guide.md](docs/install-opti
 
 ### 1. Installer 
 
-- Download the installer `.exe` from **Releases** and run it. Installs to `Program Files` 
+- Download and run the installer `ordir-setup.exe` from **Releases**, it will create a folder in `Program Files` 
 
 - If you want to use **[quick launch](#quick-launch-from-any-folder)**, check `Install 'ordir' command to user PATH` during install
 
