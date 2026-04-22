@@ -52,15 +52,15 @@ Extract anywhere and run `Ordir.exe`
 
 #### Requirements:
 
-• Windows 10+
-• .NET 8 SDK
-• Inno Setup 6 (only if building installer)
+• Windows 10+  
+• .NET 8 SDK  
+• Inno Setup 6 (only if building installer)  
 
-#### Quick build:
+#### Quick build:  
 
     dotnet build Ordir.sln -c Release
 
-#### Full instructions:
+#### Full instructions:  
 docs/install-options-guide.md#build
 
 ---
@@ -133,3 +133,4 @@ If Ordir helps your workflow, supporting me helps for future updates and more de
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-311A82?style=for-the-badge&logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/landn.thrn/extras)  
 [![PayPal](https://img.shields.io/badge/PayPal-311A82?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?hosted_button_id=K4PLHFVBH7X8C)
 
+![](https://github-view-counter-1-0-0.vercel.app/api?username=landnthrn-Ordir&label=false&bgColor=20164C&color=6a5acd&iconColor=6a5acd)
