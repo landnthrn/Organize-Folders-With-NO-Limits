@@ -13,7 +13,8 @@ Your configuration transfers wherever you move an organized folder, even to othe
 
 ## How it works
 
-Ordir uses a fairly unknown method via hidden `desktop.ini` files, infotips, and sorting by **Comments** in Explorer. Think of it like giving folders metadata and sorting by it.
+Ordir uses a fairly unknown method via hidden `desktop.ini` files, infotips, and sorting by **Comments** in Explorer.   
+Think of it like giving folders metadata and sorting by it.
 
 #### Input Process:
 
@@ -32,17 +33,17 @@ Ordir uses a fairly unknown method via hidden `desktop.ini` files, infotips, and
 
 # Install Options
 
-For full install options info see docs/install-options-guide.md#build
+For full install options info see [docs/install-options-guide.md#install-or-build-ordir](docs/install-options-guide.md#install-or-build-ordir)
 
 ### 1. Installer 
 
 - Download the installer `.exe` from **Releases** and run it. Installs to `Program Files` 
 
-- Check `Install 'ordir' command to user PATH`, if you want to use [quick launch](#quick-launch-from-any-folder).
+- If you want to use [quick launch](#quick-launch-from-any-folder), check `Install 'ordir' command to user PATH` during install
 
 
 ### 2. Portable
-- Download the portable `.zip` from **[Releases](https://github.com/landnthrn/ordir/releases/tag/2.0.0)**.  
+- Download the portable `.zip` from **[Releases](https://github.com/landnthrn/ordir/releases/tag/2.0.0)** 
 - Extract anywhere and run `Ordir.exe`
 
 
