@@ -1,8 +1,6 @@
 @echo off
-rem UTF-8 BOM required: cmd.exe reads this file as UTF-8 so Unicode echo art is not garbled.
-rem Set UTF-8 before mode/color so box-drawing characters print correctly (saving as UTF-8 no BOM breaks this).
-chcp 65001 >nul
 mode con: cols=120 lines=35 >nul 2>&1
+chcp 65001 >nul
 setlocal
 color 0D
 

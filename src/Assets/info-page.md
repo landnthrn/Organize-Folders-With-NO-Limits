@@ -80,9 +80,9 @@ You could make a thumbnail bin just for this to make it easy.
 
 ---
 
-## Quick launch from any folder
+# Quick launch from any folder
 
-You can quickly launch Ordir, from any folder in File Explorer, here's how:
+### You can quickly launch Ordir from any folder inside File Explorer, here's how:
 - In the folder you want to launch from
 - Clear the address bar, type `cmd /k ordir`, press Enter  
 
