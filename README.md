@@ -30,33 +30,25 @@ Ordir uses a fairly unknown method via hidden `desktop.ini` files, infotips, and
 
 ---
 
----
-
 # Install
 
+For full install options info see docs/install-options-guide.md#build
 
-### Option 1 — Installer 
+### ➤ Installer 
 
-Download the installer `.exe` from **Releases** and run it.
+Download the installer `.exe` from **Releases** and run it. Installs to `Program Files` 
 
-Installs to Program Files and can add PATH integration so you can launch from any folder:
+Check `Install 'ordir' command to user PATH`, so you can launch from any folder with [quick launch](#quick-launch-from-any-folder).
 
-    cmd /k ordir
 
-More details:
-docs/install-guide.md#installer
+### ➤ Portable version
 
----
-
-### Option 2 — Portable version
-
-Download the portable `.zip` from **[Releases](https://github.com/landnthrn/ordir/releases/tag/2.0.0)**.
+Download the portable `.zip` from **[Releases](https://github.com/landnthrn/ordir/releases/tag/2.0.0)**. #
 
 Extract anywhere and run `Ordir.exe`
 
----
 
-### Option 3 — Build from source
+### ➤ Build from source
 
 #### Requirements:
 
@@ -69,7 +61,7 @@ Extract anywhere and run `Ordir.exe`
     dotnet build Ordir.sln -c Release
 
 #### Full instructions:
-docs/install-guide.md#build
+docs/install-options-guide.md#build
 
 ---
 
@@ -81,7 +73,7 @@ docs/install-guide.md#build
 
 If you used the installer and enabled PATH integration, you can do this automatically. 
 
-#### For portable setup or building, add the `cli-launch` folder to your user PATH:
+#### For portable setup or building, manually add the `cli-launch` folder to your user PATH:
 - In this repo or your install folder, open `scripts\cli-launch` (under the app root)   
 - Copy that folder’s path  
 - Windows search > **Environment variables** > under User Variables select **Path** > **Edit** > **New** > paste the path > OK  
@@ -127,24 +119,6 @@ After applying a tweak, restart **Windows Explorer** from Task Manager.
 ### Strong Tip:
 To avoid set image paths breaking, only set thumbnails to image files that you don't ever plan on moving, or renaming.   
 You could make a thumbnail bin just for this to make it easy.
-
----
-
-## Requirements (for building)
-
-- **Windows** (the app targets Windows 10 build 17763+ / Win10+)  
-- **[.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)** (includes the Desktop / WPF workload for `dotnet build` / `dotnet publish`)  
-- **[Inno Setup 6](https://jrsoftware.org/isdl.php)** (optional; only if you run `scripts\build-installer.bat`)  
-
-Quick compile:
-
-```powershell
-cd ordir-main
-dotnet build Ordir.sln -c Release
-```
-
-#### Find more building info here:
-docs/install-guide.md#build
 
 ---
 
