@@ -7,88 +7,84 @@
 
 A handy Windows app for quickly organizing File Explorer folders in any order you please. Say goodbye to the gut-wrenching mess of folder name ordering by A–Z or numbers.
 
-Your configuration transfers wherever you move an organized folder, even to other drives. Save a custom setup as lists, or for bulk operations export lists, feed them to an AI to organize, import a revised list, and apply.
-
-Ordir uses a fairly unknown method via hidden `desktop.ini` files, infotips, and sorting by **Comments** in Explorer—think of it as giving folders metadata and sorting by it.
+Your configuration transfers wherever you move an organized folder, even to other drives. Save a custom setup or for bulk operations export lists, feed them to an AI to organize, import a revised list, and apply!
 
 ---
 
 ## How it works
 
-**Input**
+Ordir uses a fairly unknown method via hidden `desktop.ini` files, infotips, and sorting by **Comments** in Explorer—think of it as giving folders metadata and sorting by it.
 
-- Load a target folder  
-- Order folders however you want  
+#### Input Process:
 
-**Apply process**
+1. Load a target folder  
+2. Order folders to your desire
+         
 
-- Creates hidden `desktop.ini` file(s) in each folder  
-- Inserts infotip(s) (order number) into those `desktop.ini` file(s)  
-- Makes folders into system folder(s)  
-- Hides `desktop.ini` file(s)  
+#### Apply Process:  
+
+1. Creates `desktop.ini(s)` in each folder  
+2. Inserts infotip(s) (order number) into desktop.ini(s)  
+3. Makes into system folder(s)  
+4. Hides `desktop.ini(s)`  
+
+---
+
+## Quick launch from any folder
+
+You can launch Ordir from the folder you are organizing inside File Explorer:
+
+- In the folder you want to launch from
+- Clear the address bar, type `cmd /k ordir`, press Enter  
+
+If you used the installer and enabled PATH integration, you can do this automatically. 
+For portable setup or building, add the `cli-launch` folder to your user **PATH**:
+
+- In this repo or your install folder, open `scripts\cli-launch` (under the app root)   
+- Copy that folder’s path  
+- Windows search > **Environment variables** > under User Variables select **Path** > **Edit** > **New** > paste the path > OK  
 
 ---
 
 ## How to see changes
 
-**In File Explorer for that folder**
+**In File Explorer of target folder:**
 
 - Right-click empty space → **Sort by** → **More…** (on Windows 11, use **Show more options** if needed)  
-- Turn on **Comments**  
+- Check **Comments**  
 - Right-click empty space → **Sort by** → **Comments**  
 - Right-click → **Refresh**  
 
-Sometimes it takes a bit of refreshing for Explorer to catch up.
+Sometimes it takes some play to Explorer to refresh properly.
 
-**If you do not see changes**
-
+**If you don't see changes:**
 - Open Task Manager  
 - Right-click **Windows Explorer** → **Restart**  
 
 ---
 
-## Quick launch from any folder (`ordir`)
-
-You can launch Ordir from the folder you are organizing inside File Explorer:
-
-- Clear the address bar, type `cmd /k ordir`, press Enter  
-
-If you used the installer and enabled PATH integration, that is set up for you. For portable installs or your own builds, add the `cli-launch` folder to your user **PATH**:
-
-- In this repo or your install folder, open `scripts\cli-launch` (under the app root)  
-- Copy that folder’s path  
-- Windows search → **Environment variables** → **User** variables → **Path** → **Edit** → **New** → paste the path → OK out  
-
----
-
 ## How to set custom thumbnails
 
-While viewing organized folders by large icons, you may notice file/gear icons as thumbnails. This setup also allows custom folder thumbnails from image files.
+Once folders have been applied, you may notice file and gear icons as thumbnails while viewing folders by large icons.
+Luckily this setup gives folders the ability to add custom thumbnails from image files. 
 
-- Right-click folder -> **Properties** -> **Customize** -> **Choose File...**
-- Pick an image and click **Apply** -> **OK**
+- Right-click folder > **Properties** > **Customize** > **Choose File...**
+- Pick an image > **Apply** -> **OK**
 
 ## Disclaimer
 
-Windows can sometimes partially reset thumbnail cache. It is recommended to apply the cache tweak before relying on custom thumbnails and sorting by comments.
+Sometimes Windows may partically reset some thumbnail cache. 
+It's recommended to apply the following cache tweak before setting custom thumbnails or sorting by comments.
 
-Recommended:
 - [Stop Windows From Deleting Thumbnail Cache (Win 10/11)](https://winaero.com/windows-10-deleting-thumbnail-cache/)
-- [How to Increase Number of Folder Views to Remember (Win 10/11)](https://winaero.com/change-number-of-folder-views-to-remember-in-windows-10/)
+- *(If you want this also)*  
+  [How to Increase Number of Folder Views to Remember (Win 10/11)](https://winaero.com/change-number-of-folder-views-to-remember-in-windows-10/)
 
 After applying a tweak, restart **Windows Explorer** from Task Manager.
 
-**Extra tip:** Use image files for thumbnails that you do not move or rename.
-
----
-
-## Find this useful?
-
-If Ordir helps your workflow, support helps future updates and more desktop tools—or leave a star on GitHub.
-
-- GitHub: https://github.com/landnthrn  
-- Buy Me a Coffee: https://buymeacoffee.com/landn.thrn  
-- Discord: https://discord.com/users/831735011588964392  
+### Strong Tip:
+To avoid set image paths breaking, only set thumbnails to image files that you don't ever plan on moving, or renaming.   
+You could make a thumbnail bin just for this to make it easy.
 
 ---
 
@@ -144,8 +140,21 @@ Run these **in order** from the `ordir-main` folder:
 ```powershell
 cd ordir-main
 dotnet build Ordir.sln -c Release
-scripts\build-portable.bat
 scripts\build-installer.bat
+scripts\build-portable.bat
+scripts\build-portable.bat # <-- Sometimes you need to run twice
 ```
 
-Use whatever Git branch you prefer; for releases, building from **`main`** (or your default release branch) after merging is the usual workflow so tags and binaries match the branch users expect.
+--- 
+
+## Found this useful?<img src="https://media.tenor.com/23NitOvEEkMAAAAj/optical-illusion-rotating-head.gif" width="30"><br>
+
+If Ordir helps your workflow, supporting me helps for future updates and more desktop tools, or just leave a star on repo :)
+
+[![Follow Me <3](https://img.shields.io/badge/Follow%20Me%20%3C3-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/landnthrn)   
+[![Find More of my Creations on GitHub](https://img.shields.io/badge/Find%20More%20of%20my%20Creations%20on%20GitHub-311A82?style=for-the-badge&logo=github&logoColor=white)](https://github.com/landnthrn?tab=repositories)  
+[![Gists: landnthrn](https://img.shields.io/badge/Gists-311A82?style=for-the-badge&logo=github&logoColor=white)](https://gist.github.com/landnthrn)  
+[![Discord: landn.thrn](https://img.shields.io/badge/Discord-311A82?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/831735011588964392)  
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-311A82?style=for-the-badge&logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/landn.thrn/extras)  
+[![PayPal](https://img.shields.io/badge/PayPal-311A82?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?hosted_button_id=K4PLHFVBH7X8C)
+
