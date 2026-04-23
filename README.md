@@ -5,7 +5,7 @@
 
 # Ordir
 
-Finally have the freedom to organize/order folders any way you want in Windows File Explorer, and add custom thumbnails. Say goodbye to the gut-wrenching mess of folder name ordering by A–Z or numbers, and order limitations in general. 
+Finally have the freedom to organize/order folders any way you want in Windows File Explorer, and add custom thumbnails. Say goodbye to the gut-wrenching mess of foldername ordering by A–Z or numbers, and order limitations in general. 
 
 Your configuration transfers wherever you move an organized folder, even to other drives. Save a custom setup or for bulk operations export lists, feed them to an AI to organize, import a revised list, and apply!
 
