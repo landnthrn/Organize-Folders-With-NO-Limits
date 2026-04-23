@@ -1,7 +1,4 @@
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/8b8f5455-5b3e-4728-a479-83774db6cf12" height="365"/>
-  <img src="https://github.com/user-attachments/assets/4bf72cf2-57a7-4f67-a9b2-1b5b66853376" height="365"/>
-</p>
+<img width="800" height="741" alt="ordir-preview-GIF" src="https://github.com/user-attachments/assets/23d93151-41b9-44c8-b957-52ddfe6a8a03" />
 
 # Ordir
 
